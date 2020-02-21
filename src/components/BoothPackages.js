@@ -11,7 +11,7 @@ const PackageLists = () =>
       <div className="packageLists" key={i}>
         <h3>{booth.title}</h3>
         {services()}
-        <p className="price">{booth.price}</p>
+        <p className="price">{"$" + booth.price}</p>
       </div>
     );
   });
