@@ -1,0 +1,41 @@
+{
+  "boothPackages": [
+    {
+      "title": "black",
+      "price": "1350",
+      "services": ["x8 Premium tickets", "x2 Bottles"]
+    },
+
+    {
+      "title": "gold",
+      "price": "1100",
+      "services": ["x8 VVIP Tickets", "x2 Bottles"]
+    },
+
+    {
+      "title": "silver",
+      "price": "500",
+      "services": ["x4 VIP Tickets", "x1 Bottles"]
+    }
+  ],
+  "bottleList": [
+    { "spec": "vodka", "items": ["Grey Goose", "Ciroc"] },
+    {
+      "spec": "whickey scotch",
+      "items": ["Jameson", "Jack Daniels", "Crown Royal", "Johnny walker Black"]
+    },
+    {
+      "spec": "tequila",
+      "items": [
+        "Cazadores Anejo",
+        "Patron Silver",
+        "Don Julio Silver",
+        "Bacardi White",
+        "Bacardi Oakheart"
+      ]
+    },
+    { "spec": "gin", "items": ["Bombay Sapphire"] },
+    { "spec": "cognac", "items": ["Hennessy VS"] },
+    { "spec": "other", "items": ["Jagermeister (+ Redbull 4 pack)"] }
+  ]
+}

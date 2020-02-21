@@ -1,0 +1,94 @@
+@import "./variables";
+@import "./mixin";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans:800|Raleway|Raleway:900&display=swap");
+
+body {
+  // font-family: "Raleway", "sans-serif";
+  font-family: "Open Sans", "sans-serif";
+  background: #222;
+  color: $fontColor;
+}
+section {
+  width: 100%;
+}
+nav {
+  position: absolute;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  padding: 0 20px;
+  // background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .logo {
+    display: contents;
+    img {
+      height: 40%;
+    }
+  }
+}
+.header {
+  background: url(./images/Changmo-meteor-main.jpg) no-repeat 0 20%;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .meteor {
+    width: 70%;
+  }
+}
+.container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 0 10px;
+  text-align: center;
+}
+.info {
+  text-transform: uppercase;
+  font-size: 2em;
+  line-height: 1.2;
+  .title {
+    color: $subColor;
+  }
+  .subtitle {
+    font-size: 1.5rem;
+    span {
+      letter-spacing: 7px;
+    }
+  }
+}
+.guestName {
+  font-size: 1.5rem;
+  background: $fontColor;
+  color: #222;
+  display: inline-block;
+  width: 90%;
+  margin-top: 20px;
+}
+.packageLists {
+  font-weight: 300;
+}
+.media {
+  iframe {
+    width: 100%;
+    height: 60vw;
+  }
+}
+
+.footer {
+  background: #fff;
+  color: #222;
+  .container {
+    padding-bottom: 80px;
+  }
+  .copyright {
+    font-size: 14px;
+  }
+  .logo {
+    width: 70%;
+  }
+}
