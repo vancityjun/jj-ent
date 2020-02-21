@@ -9,7 +9,7 @@ const PackageLists = () =>
       });
     return (
       <div className="packageLists" key={i}>
-        <h3>{booth.title}</h3>
+        <h3 className="title">{booth.title}</h3>
         {services()}
         <p className="price">{"$" + booth.price}</p>
       </div>

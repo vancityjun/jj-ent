@@ -11,7 +11,12 @@ body {
 section {
   width: 100%;
 }
-
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 500;
+}
 nav {
   position: absolute;
   z-index: 10000;
@@ -40,6 +45,7 @@ nav {
   justify-content: center;
   .title {
     font-size: 3em;
+    font-weight: 600;
     width: 70%;
     text-align: center;
   }
@@ -54,12 +60,15 @@ nav {
   text-transform: uppercase;
   font-size: 2em;
   line-height: 1.2;
+  font-weight: 600;
   .title {
     color: $primaryColor;
+    font-weight: inherit;
   }
   .subtitle {
     color: $subColor;
     font-size: 0.9em;
+    font-weight: inherit;
     span {
       letter-spacing: 7px;
     }
@@ -68,6 +77,7 @@ nav {
 .guestName {
   font-size: 1.5rem;
   background: $subColor;
+  font-weight: 600;
   color: #222;
   display: inline-block;
   width: 90%;
@@ -89,6 +99,11 @@ nav {
   font-weight: 300;
   margin-top: 20px;
   line-height: 1.7;
+  .title {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.3em;
+  }
 }
 .media {
   iframe {
