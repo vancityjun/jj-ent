@@ -11,6 +11,7 @@ body {
 section {
   width: 100%;
 }
+
 nav {
   position: absolute;
   z-index: 10000;
@@ -37,8 +38,10 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  .meteor {
+  .title {
+    font-size: 3em;
     width: 70%;
+    text-align: center;
   }
 }
 .container {
@@ -52,10 +55,11 @@ nav {
   font-size: 2em;
   line-height: 1.2;
   .title {
-    color: $subColor;
+    color: $primaryColor;
   }
   .subtitle {
-    font-size: 1.5rem;
+    color: $subColor;
+    font-size: 0.9em;
     span {
       letter-spacing: 7px;
     }
@@ -63,14 +67,28 @@ nav {
 }
 .guestName {
   font-size: 1.5rem;
-  background: $fontColor;
+  background: $subColor;
   color: #222;
   display: inline-block;
   width: 90%;
   margin-top: 20px;
+  // font-weight: 500;
+  .logo {
+    width: 50%;
+  }
+}
+
+.detail {
+  line-height: 1.7;
+  margin-top: 20px;
+  span {
+    display: block;
+  }
 }
 .packageLists {
   font-weight: 300;
+  margin-top: 20px;
+  line-height: 1.7;
 }
 .media {
   iframe {
@@ -78,7 +96,10 @@ nav {
     height: 60vw;
   }
 }
-
+.menu {
+  line-height: 1.7;
+  margin-top: 20px;
+}
 .footer {
   background: #fff;
   color: #222;
@@ -97,8 +118,48 @@ nav {
   }
   .logo {
     width: 70%;
+    margin: 20px 0;
   }
 }
 .instagram {
   display: block;
+}
+
+.interaction {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px auto;
+}
+
+.btn {
+  background: $fontColor;
+  color: #222;
+  padding: 10px 15px;
+  transition: 0.3s;
+  width: calc(50% - 30px);
+  &:hover {
+    background: rgba(234, 232, 233, 0.8);
+  }
+}
+.ticket,
+.vipBooth {
+  margin-top: 80px;
+}
+.ticket {
+  display: flex;
+  flex-wrap: wrap;
+  // height: 100vh;
+  align-items: center;
+  .btn {
+    background: $primaryColor;
+    width: 100%;
+    margin-top: 30px;
+    font-size: 1.5em;
+    padding: 20px 15px;
+    text-transform: uppercase;
+    // height: calc(100vh / 3);
+    &:hover {
+      background: $subColor;
+    }
+  }
 }

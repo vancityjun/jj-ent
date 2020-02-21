@@ -5,6 +5,12 @@ const Footer = () => {
     <section className="footer">
       <div className="container">
         <img className="logo" src={require("../images/ambition.png")} alt="" />
+        <img
+          className="logo"
+          src={require("../images/jjlogo-black.svg")}
+          alt=""
+        />
+        <img className="logo" src={require("../images/SS_black.png")} alt="" />
         <a
           className="instagram"
           href="https://www.instagram.com/jj.ent.toronto/"

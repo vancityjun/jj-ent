@@ -12,7 +12,7 @@ const Menu = () =>
 const BottlePrice = () => {
   return (
     <div className="container">
-      <h2>Additional bottle price</h2>
+      <h2>Bottles</h2>
       <div className="menu">{Menu()}</div>
     </div>
   );
