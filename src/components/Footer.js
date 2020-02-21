@@ -23,7 +23,7 @@ const Footer = () => {
           />
         </a>
         <p className="copyright">
-          Copyright © <span>UNDEFINEDtam</span>. All rights reserved.
+          Copyright © <span>UNDEFINEDteam</span>. All rights reserved.
         </p>
         <img
           style={{ height: 40 }}
