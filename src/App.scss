@@ -64,14 +64,9 @@ nav {
   line-height: 1.2;
   font-weight: 600;
   .title {
-    color: $subColor;
-    font-weight: inherit;
-    font-size: 1.9em;
-  }
-  .subtitle {
     color: $primaryColor;
-    font-size: 0.9em;
     font-weight: inherit;
+    font-size: 1.7em;
     &:before,
     &:after {
       content: "";
@@ -79,8 +74,14 @@ nav {
       height: 1px;
       width: 100%;
       position: relative;
-      background: $subColor;
+      background: $primaryColor;
     }
+  }
+  .subtitle {
+    color: $subColor;
+    font-size: 0.9em;
+    font-weight: inherit;
+
     span {
       letter-spacing: 7px;
     }

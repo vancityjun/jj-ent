@@ -5,8 +5,9 @@ const Info = () => {
   return (
     <div className="container">
       <div className="info">
-        <h1 className="title">Changmo</h1>
-        <h3 className="subtitle">Official After Party</h3>
+        <h3 className="subtitle">Official</h3>
+        <h1 className="title">After Party</h1>
+        <h3 className="subtitle">With Changmo</h3>
       </div>
       <Interaction />
       <h3 className="guestName">
