@@ -1,4 +1,5 @@
 import React from "react";
+import Interaction from "./Interaction";
 
 const Info = () => {
   return (
@@ -7,6 +8,7 @@ const Info = () => {
         <h1 className="title">Changmo</h1>
         <h3 className="subtitle">Official After Party</h3>
       </div>
+      <Interaction />
       <h3 className="guestName">
         Presented by&nbsp;
         <img
@@ -23,9 +25,9 @@ const Info = () => {
         <span>10pm - 3am</span>
         <span>580 King ST W, Toronto</span>
         <span className="miniMap">
-          <img src={require("../images/minimap.png")} alt="" />
+          <img src={require("../images/minimap.svg")} alt="" />
         </span>
-        <span className="small">Must bring your I.D</span>
+        <span className="small">Must bring your I.D +19 event</span>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.scss";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Router } from "react-router-dom";
 import Nav from "./components/Nav";
 
 import AppRoutes from "./routes";
@@ -8,7 +8,7 @@ import AppRoutes from "./routes";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter onUpdate={() => window.scrollTo(0, 0)}>
         <Nav />
         <AppRoutes></AppRoutes>
       </BrowserRouter>
