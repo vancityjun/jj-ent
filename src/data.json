@@ -1,21 +1,30 @@
 {
   "boothPackages": [
     {
-      "title": "black",
+      "title": "spade",
+      "soldout": true,
       "price": "1350",
       "services": ["x8 Premium tickets", "x2 Bottles"]
     },
 
     {
-      "title": "gold",
+      "title": "diamond",
+      "soldout": false,
       "price": "1100",
-      "services": ["x8 VVIP Tickets", "x2 Bottles"]
+      "services": ["x8 Premium tickets", "x2 Bottles"]
     },
 
     {
-      "title": "silver",
-      "price": "500",
-      "services": ["x4 VIP Tickets", "x1 Bottles"]
+      "title": "heart",
+      "soldout": false,
+      "price": "950",
+      "services": ["x6 Premium Tickets", "x2 Bottles"]
+    },
+    {
+      "title": "clover",
+      "soldout": false,
+      "price": "600",
+      "services": ["x6 Premium Tickets", "x1 Bottle"]
     }
   ],
   "bottleList": [

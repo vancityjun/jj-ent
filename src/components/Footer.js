@@ -7,7 +7,7 @@ const Footer = () => {
         <img className="logo" src={require("../images/ambition.png")} alt="" />
         <img
           className="logo"
-          src={require("../images/jjlogo-black.svg")}
+          src={require("../images/jjent-logo-black.svg")}
           alt=""
         />
         <img className="logo" src={require("../images/SS_black.png")} alt="" />
