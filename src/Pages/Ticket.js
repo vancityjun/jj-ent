@@ -2,23 +2,26 @@ import React from "react";
 const links = [
   {
     title: "Early bird",
-    to:
-      "https://www.eventbrite.ca/e/changmo-after-party-in-toronto-with-jj-entertainment-tickets-95779482009"
+    to: "http://bit.ly/after-party-general"
   },
   {
     title: "General Admission",
-    to:
-      "https://www.eventbrite.ca/e/changmo-after-party-in-toronto-with-jj-entertainment-tickets-95779482009"
+    to: "http://bit.ly/after-party-general"
   },
   {
     title: "Promo ticket",
-    to: "https://www.eventbrite.ca/e/promo-code-tickets-tickets-96086462195"
+    to: "http://bit.ly/after-party-promocode"
   }
 ];
 const Buttons = () =>
   links.map((button, i) => {
     return (
-      <a className="btn" href={button.to} target="_blank">
+      <a
+        className="btn"
+        href={button.to}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {button.title}
       </a>
     );

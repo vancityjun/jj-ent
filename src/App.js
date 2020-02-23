@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.scss";
-import { BrowserRouter, Router } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import Nav from "./components/Nav";
 import ReactGA from "react-ga";
 import AppRoutes from "./routes";

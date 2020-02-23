@@ -15,6 +15,7 @@ const Footer = () => {
           className="instagram"
           href="https://www.instagram.com/jj.ent.toronto/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img
             style={{ width: 40 }}
