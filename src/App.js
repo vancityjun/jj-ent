@@ -2,10 +2,13 @@ import React from "react";
 import "./App.scss";
 import { BrowserRouter, Router } from "react-router-dom";
 import Nav from "./components/Nav";
-
+import ReactGA from "react-ga";
 import AppRoutes from "./routes";
 
-function App() {
+ReactGA.initialize("UA-89794136-2");
+ReactGA.pageview("/");
+
+const App = () => {
   return (
     <div className="App">
       <BrowserRouter onUpdate={() => window.scrollTo(0, 0)}>
@@ -14,6 +17,6 @@ function App() {
       </BrowserRouter>
     </div>
   );
-}
+};
 
 export default App;

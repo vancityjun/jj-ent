@@ -1,7 +1,8 @@
 {
-  "name": "jj-ent",
+  "name": "jjent-changmo",
   "version": "0.1.0",
   "private": true,
+  "Author": "designed by Inhye Choi and Jun Lee | developed by Jun Lee | project managed by Inhye Choi",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
     "@fortawesome/free-solid-svg-icons": "^5.12.1",
@@ -12,6 +13,7 @@
     "node-sass": "^4.13.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-ga": "^2.7.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
     "styled-components": "^5.0.1"
