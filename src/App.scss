@@ -138,22 +138,22 @@ nav {
     font-size: 1.5em;
     font-family: $serif;
     color: $subColor;
-    &.soldout {
-      position: relative;
-      &:after {
-        content: 'sold out';
-        font-family: 'Open Sans';
-        position: absolute;
-        font-size: 14px;
-        color: #c10e0e;
-        transform: rotateZ(30deg);
-        letter-spacing: -1px;
-        line-height: 1;
-        text-align: center;
-        right: 20%;
-        top: 20%;
-      }
-    }
+  }
+}
+.soldout {
+  position: relative;
+  &:after {
+    content: 'sold out';
+    font-family: 'Open Sans';
+    position: absolute;
+    font-size: 14px;
+    color: #c10e0e;
+    transform: rotateZ(30deg);
+    letter-spacing: -1px;
+    line-height: 1;
+    text-align: center;
+    right: 20%;
+    top: 20%;
   }
 }
 
@@ -253,7 +253,6 @@ nav {
 .ticket {
   display: flex;
   flex-wrap: wrap;
-  // height: 100vh;
   align-items: center;
   .btn {
     background: $primaryColor;
@@ -262,7 +261,15 @@ nav {
     font-size: 1.5em;
     padding: 20px 15px;
     text-transform: uppercase;
-    // height: calc(100vh / 3);
+    &.soldout {
+      background: #999;
+      &:hover {
+        background: #999;
+      }
+      &::after {
+        right: 10%;
+      }
+    }
     &:hover {
       background: $subColor;
     }

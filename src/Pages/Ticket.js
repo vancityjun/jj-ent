@@ -1,21 +1,24 @@
-import React from "react";
+import React from 'react'
 const links = [
   {
-    title: "Early bird",
-    to: "http://bit.ly/after-party-general"
+    title: 'Early bird',
+    to: 'http://bit.ly/after-party-general',
+    soldout: true
   },
   {
-    title: "General Admission",
-    to: "http://bit.ly/after-party-general"
+    title: 'General Admission',
+    to: 'http://bit.ly/after-party-general',
+    soldout: false
   },
   {
-    title: "Promo ticket",
-    to: "http://bit.ly/after-party-promocode"
+    title: 'Promo ticket',
+    to: 'http://bit.ly/after-party-promocode',
+    soldout: false
   }
-];
+]
 const Buttons = () =>
   links.map((button, i) => {
-    return (
+    return !button.soldout ? (
       <a
         className="btn"
         href={button.to}
@@ -24,10 +27,12 @@ const Buttons = () =>
       >
         {button.title}
       </a>
-    );
-  });
+    ) : (
+      <p className="btn soldout">{button.title}</p>
+    )
+  })
 const Ticket = () => {
-  return <div className="container ticket">{Buttons()}</div>;
-};
+  return <div className="container ticket">{Buttons()}</div>
+}
 
-export default Ticket;
+export default Ticket
