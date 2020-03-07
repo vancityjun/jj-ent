@@ -21,9 +21,9 @@ const Info = () => {
       <div className="detail">
         <p>Live performance by</p>
         <p style={{ fontSize: '1.3em' }}>Changmo &amp; Paul Blanco</p>
-        <p className="strong">J.KIDO</p>
+        <p className="strong">Sound by J.Kido</p>
         <p>&amp;</p>
-        <p className="strong">sound by Rebel main DJ Jed Harper</p>
+        <p className="strong">Rebel's Main DJ, Jed Harper</p>
         <h3 className="date">March 15th 2020</h3>
         <h3 className="location">@ The Everleigh</h3>
         <p>10pm - 3am</p>

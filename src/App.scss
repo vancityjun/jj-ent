@@ -146,7 +146,8 @@ nav {
     color: $subColor;
   }
 }
-.soldout {
+.soldout,
+.lowQuantity {
   position: relative;
   &:after {
     content: 'sold out';
@@ -162,7 +163,14 @@ nav {
     top: 20%;
   }
 }
-
+.lowQuantity {
+  &:after {
+    content: 'low quantity available';
+    color: #ff7b05;
+    width: 100px;
+    right: 8%;
+  }
+}
 .vipBooth {
   line-height: 1.7;
   h2 {

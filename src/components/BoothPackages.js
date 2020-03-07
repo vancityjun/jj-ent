@@ -1,5 +1,5 @@
-import React from "react";
-import { boothPackages } from "../data.json";
+import React from 'react'
+import { boothPackages } from '../data.json'
 
 const PackageLists = () =>
   boothPackages.map((booth, i) => {
@@ -9,18 +9,18 @@ const PackageLists = () =>
           <p className="service" key={i}>
             {service}
           </p>
-        );
-      });
+        )
+      })
     return (
       <div className="packageLists" key={i}>
-        <h3 className={`title ${booth.soldout ? "soldout" : ""}`}>
+        <h3 className={`title ${booth.soldout ? 'soldout' : 'lowQuantity'}`}>
           {booth.title}
         </h3>
-        <p className="price">{"$" + booth.price}</p>
+        <p className="price">{'$' + booth.price}</p>
         {services()}
       </div>
-    );
-  });
+    )
+  })
 const BoothPackages = () => {
   return (
     <div className="container boothPackages">
@@ -31,7 +31,7 @@ const BoothPackages = () => {
         <p>*All Premium tickets includes line by pass.</p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default BoothPackages;
+export default BoothPackages
