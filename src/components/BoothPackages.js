@@ -27,9 +27,9 @@ const BoothPackages = () => {
       <h2>Booth Packages</h2>
       {PackageLists()}
       <div className="moreInfo">
+        <h3 className="em">ALL THE TABLES ARE IN SALE. CONTACT ORGANIZER.</h3>
         <p>*Fee will be charged for additional person(s) and bottles.</p>
         <p>*All Premium tickets includes line by pass.</p>
-        <h3 className="em">ALL THE TABLES ARE IN SALE. CONTACT ORGANIZER.</h3>
       </div>
     </div>
   )
