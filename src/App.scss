@@ -189,11 +189,14 @@ nav {
     }
   }
   .moreInfo {
-    color: $subColor;
     margin-top: 40px;
     display: inline-block;
     p {
       margin-bottom: 10px;
+    }
+    h3 {
+      color: $subColor;
+      font-size: 1.4em;
     }
   }
   .price {

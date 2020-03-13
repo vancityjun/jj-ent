@@ -16,7 +16,7 @@ const PackageLists = () =>
         <h3 className={`title ${booth.soldout ? 'soldout' : 'lowQuantity'}`}>
           {booth.title}
         </h3>
-        <p className="price">{'$' + booth.price}</p>
+        {/* <p className="price">{'$' + booth.price}</p> */}
         {services()}
       </div>
     )
@@ -29,6 +29,7 @@ const BoothPackages = () => {
       <div className="moreInfo">
         <p>*Fee will be charged for additional person(s) and bottles.</p>
         <p>*All Premium tickets includes line by pass.</p>
+        <h3 className="em">ALL THE TABLES ARE IN SALE. CONTACT ORGANIZER.</h3>
       </div>
     </div>
   )
